@@ -11,12 +11,16 @@ function App() {
   return (
     <>
       <GlobalStyle />
+      <br></br>
       <h1>Button</h1>
       <ButtonComponent></ButtonComponent>
+      <br></br>
       <h1>Input</h1>
       <InputComponent></InputComponent>
+      <br></br>
       <h1>Modal</h1>
       <ModalComponent></ModalComponent>
+      <br></br>
       <h1>Select</h1>
       <SelectComponent></SelectComponent>
     </>
