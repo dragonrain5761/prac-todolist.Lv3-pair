@@ -11,10 +11,13 @@ function App() {
   return (
     <>
       <GlobalStyle />
-      <h1>button</h1>
+      <h1>Button</h1>
       <ButtonComponent></ButtonComponent>
+      <h1>Input</h1>
       <InputComponent></InputComponent>
+      <h1>Modal</h1>
       <ModalComponent></ModalComponent>
+      <h1>Select</h1>
       <SelectComponent></SelectComponent>
     </>
   );
