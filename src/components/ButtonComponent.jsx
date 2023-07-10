@@ -16,7 +16,7 @@ function ButtonComponent({
         <Button
           color="rgb(0, 0, 0)"
           bg="rgb(255, 255, 255)"
-          primary
+          primary="true"
           size="large"
           onClick={() => alert("버튼을 만들어보세요")}
         >
@@ -33,7 +33,7 @@ function ButtonComponent({
         <Button
           color="rgb(0, 0, 0)"
           bg="rgb(255, 255, 255)"
-          negative
+          negative="true"
           size="large"
           onClick={() => prompt("어렵다.")}
         >

@@ -6,12 +6,13 @@ export const Stbutton = styled.button`
   color: ${(props) => props.color};
   border: 3px solid
     ${(props) =>
-      props.primary
+      props.$primary
         ? "rgb(85, 239, 196)"
-        : props.negative
+        : props.$negative
         ? "rgb(239, 100, 123)"
         : "rgb(255, 255, 255)"};
-  background-color: ${(props) => props.bg};
+  background-color: ${(props) => props.$bg};
+
   ${(props) =>
     props.size === "large" &&
     css`
@@ -39,9 +40,9 @@ function Button({ children, color, bg, primary, negative, onClick, size }) {
   return (
     <Stbutton
       color={color}
-      bg={bg}
-      primary={primary}
-      negative={negative}
+      $bg={bg}
+      $primary={primary}
+      $negative={negative}
       onClick={onClick}
       size={size}
     >
