@@ -1,7 +1,9 @@
-import React from "react";
+// import React from "react";
+// import { createPortal } from "react-dom";
 
-function SelectList() {
-  return <div>SelectList</div>;
-}
+// function ModalContainer({ children }) {
+//   return createPortal(<>{children}</>, document.getElementById("modal"));
+// }
 
-export default SelectList;
+// export default ModalContainer;
+// //

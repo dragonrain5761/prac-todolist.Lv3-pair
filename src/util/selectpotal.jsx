@@ -1,7 +1,8 @@
 import React, { useState } from "react";
+import { createPortal } from "react-dom";
 import styled from "styled-components";
 
-function Select() {
+function Selectpotal() {
   const [showoptions, setShowOptions] = useState(false);
   const [values, setValues] = useState("리액트");
   const optionList = ["리액트", "자바", "스프링", "리액트네이티브"];
@@ -21,29 +22,33 @@ function Select() {
   return (
     <StSelectbutton onClick={onclickOptionsHandler}>
       <label>{values}</label>
-      <StoptionContainer>
-        {showoptions &&
-          optionList.map((item) => (
-            <StoptionList key={item} onClick={onChangeOptionHandler}>
-              {item}
-            </StoptionList>
-          ))}
-      </StoptionContainer>
+
+      {showoptions &&
+        createPortal(
+          <StoptionContainer>
+            {optionList.map((item) => (
+              <StoptionList key={item} onClick={onChangeOptionHandler}>
+                {item}
+              </StoptionList>
+            ))}
+          </StoptionContainer>,
+          document.body
+        )}
     </StSelectbutton>
   );
 }
 
-export default Select;
+export default Selectpotal;
 
 const StoptionContainer = styled.div`
   position: absolute;
-  top: 40px;
   width: 180px;
   border: 1px solid;
   border-radius: 12px;
   background-color: #ffffff;
-  left: auto;
   text-align: center;
+  margin-left: 13.9rem;
+  margin-top: -6.35rem;
 `;
 
 const StoptionList = styled.div`

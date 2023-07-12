@@ -21,10 +21,19 @@ function App() {
       <h1>Modal</h1>
       <ModalComponent></ModalComponent>
       <br></br>
-      <h1>Select</h1>
-      <SelectComponent></SelectComponent>
+      <StselectBox>
+        <h1>Select</h1>
+        <SelectComponent></SelectComponent>
+      </StselectBox>
     </>
   );
 }
 
 export default App;
+
+const StselectBox = styled.div`
+  border: 3px solid rgb(221, 221, 221);
+  height: 200px;
+  overflow: hidden;
+  margin-top: 50px;
+`;
